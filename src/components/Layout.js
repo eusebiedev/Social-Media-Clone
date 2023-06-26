@@ -10,7 +10,7 @@ import { Container, Row, Col, } from 'react-bootstrap';
 
 function Layout() {
   return (
-    <Container>
+    <Container className='main'>
       <Row>
         <Col>
           <Profile />

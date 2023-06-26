@@ -7,31 +7,37 @@ function TweetList() {
     const tweetList = [
         {
             user: 'Soup1e',
+            userPic: 'profile',
             date: 'today',
             message: 'I love react!'
         },
         {
             user: 'Soup1e',
+            userPic: 'profile',
             date: 'today',
             message: 'I think in react!'
         },
         {
             user: 'Noodly',
+            userPic: 'profile3',
             date: 'yesterday',
             message: 'I love pasta!'
         },
         {
             user: 'VeryColdman',
+            userPic: 'profile4',
             date: 'tomorrow',
             message: 'whatchoo talkin bout willis?'
         },
         {
             user: 'Noodly',
             date: 'yesterday',
+            userPic: 'profile3',
             message: 'I love pizza!'
         },
         {
             user: 'VeryColdman',
+            userPic: 'profile4',
             date: 'tomorrow',
             message: 'whatchoo talkin bout react? '
         },
@@ -47,6 +53,7 @@ function TweetList() {
             </Form>
                 {tweetList.map((tweet, index) =>
                 <Tweet user={tweet.user}
+                userPic={tweet.userPic}
                 date={tweet.date}
                 message={tweet.message}
                 key={index}/>

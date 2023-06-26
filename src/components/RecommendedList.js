@@ -20,6 +20,7 @@ function RecommendedList() {
     <React.Fragment>
         {recommendedUserList.map((recommended, index) =>
           <Recommended user={recommended.user}
+          userPic={recommended.userPic}
           key={index}/>
         )}
     </React.Fragment>
