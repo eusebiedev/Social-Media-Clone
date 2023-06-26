@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-.navbar {
-  margin-left: 10px;
+/* .navbar {
+  margin-left: 0px;
   display: flex;
   justify-content: space-around;
+} */
+
+.navbar-brand {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(0, 110, 255);
+  margin-left: 10px;
+}
+
+.background {
+  background-color: rgb(126, 126, 126);
 }
 
 .profile {
@@ -44,7 +56,7 @@
   height: 40px;
   border-radius: 5px;
   border: 1px solid rgb(0, 110, 255);
-  margin-left: 600px;
+
 }
 
 #button {
@@ -53,4 +65,18 @@
 
 #tweet-card {
   border-bottom: 1px solid rgb(0, 110, 255);
+}
+
+#reco {
+  border-radius: 5px;
+  border: 1px solid rgb(0, 110, 255);
+  padding: 10px;
+}
+
+.compose {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 110, 255);
+  padding: 10px;
 }

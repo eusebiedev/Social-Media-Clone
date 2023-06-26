@@ -1,6 +1,6 @@
 import React from 'react';
 import Tweet from './Tweet';
-import { Card, Form } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 
 function TweetList() {
     const tweetList = [
@@ -20,7 +20,7 @@ function TweetList() {
             user: 'Noodly',
             userPic: 'profile3',
             date: 'yesterday',
-            message: 'I love pasta!'
+            message: 'I love pasta! Only pasta. There was always pasta.'
         },
         {
             user: 'VeryColdman',
@@ -32,7 +32,7 @@ function TweetList() {
             user: 'Noodly',
             date: 'yesterday',
             userPic: 'profile3',
-            message: 'I love pizza!'
+            message: 'I already said i love pasta. There is nothing else. only variations on pasta!'
         },
         {
             user: 'VeryColdman',
@@ -44,10 +44,9 @@ function TweetList() {
 
     return (
         <React.Fragment>
-            <Card>
                 <Form>
                     <Form.Group controlId="tweetBox">
-                    <Form.Control as="textarea" rows={3} placeholder="Compose new Tweet..." />
+                        <Form.Control className="compose" as="textarea" rows={2} placeholder="Compose new Tweet..." />
                     </Form.Group>
                 </Form>
                     {tweetList.map((tweet, index) =>
@@ -57,7 +56,6 @@ function TweetList() {
                     message={tweet.message}
                     key={index}/>
                     )}
-            </Card>
         </React.Fragment>
     )
 }

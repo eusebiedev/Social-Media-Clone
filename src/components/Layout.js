@@ -6,7 +6,7 @@ import { Container, Row, Col, } from 'react-bootstrap';
 
 function Layout() {
   return (
-    <Container className='main'>
+    <Container className='main background'>
       <Row>
         <Col>
           <Profile />
