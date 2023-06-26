@@ -6,7 +6,7 @@ import { Card, Form } from 'react-bootstrap';
 function Tweets(props) {
   return (
     <React.Fragment>
-      <Card className="mb-3">
+      <Card className="mb-3" id="tweet-card">
         <Card.Body>
           <div className='userline'>
           <img className="profile3" src={require('./../img/' + props.userPic + '.png')}/>

@@ -45,18 +45,18 @@ function TweetList() {
     return (
         <React.Fragment>
             <Card>
-            <Form>
-                <Form.Group controlId="tweetBox">
-                <Form.Control as="textarea" rows={3} placeholder="Compose new Tweet..." />
-                </Form.Group>
-            </Form>
-                {tweetList.map((tweet, index) =>
-                <Tweet user={tweet.user}
-                userPic={tweet.userPic}
-                date={tweet.date}
-                message={tweet.message}
-                key={index}/>
-                )}
+                <Form>
+                    <Form.Group controlId="tweetBox">
+                    <Form.Control as="textarea" rows={3} placeholder="Compose new Tweet..." />
+                    </Form.Group>
+                </Form>
+                    {tweetList.map((tweet, index) =>
+                    <Tweet user={tweet.user}
+                    userPic={tweet.userPic}
+                    date={tweet.date}
+                    message={tweet.message}
+                    key={index}/>
+                    )}
             </Card>
         </React.Fragment>
     )
